@@ -19,5 +19,7 @@ def prime?(number)
     false
   else
     number % number == 1 || number % 1 == number
+    true
+    
   end
 end
