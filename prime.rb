@@ -6,20 +6,11 @@ require 'pry'
 #   # any number divided by 1 or itslef will alwaays be true, therefore we dont inlcude 1 or itself
 
 
-# def prime?(number)
-#   
-#   if number < 0 || number == 0 || number == 1
-#     false
-#   else
-#     (2..number - 1).to_a.all? { |e| number % e != 0  }
-#   end
-# end
-
-
 def prime?(number)
-  if     number < 0 || number == 1 || number == 0
+
+  if number < 0 || number == 0 || number == 1
     false
   else
-    number % number == 1 || number % 1 == number
+    (2..number - 1).to_a.all? { |e| number % e != 0  }
   end
 end
