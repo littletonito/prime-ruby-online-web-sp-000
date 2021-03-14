@@ -18,8 +18,6 @@ def prime?(number)
   if     number < 0 || number == 1 || number == 0
     false
   else
-    number % number == 1 || number % 1 == number
-    true
-    
+    number % number == 1 || number % 1 == number    
   end
 end
